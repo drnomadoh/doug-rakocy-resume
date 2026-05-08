@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Douglas Rakocy - Customized Resume for Infrastructure Specialist 4 at Ohio Department of Education and Workforce. Modern web-optimized resume for Azure hosting.">
+    <title>Douglas Rakocy | Infrastructure Specialist 4 Resume</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&amp;family=Space+Grotesk:wght@500;600&amp;display=swap');
+        
+        :root {
+            --primary: #003087;
+        }
+        
+        body {
+            font-family: 'Inter', system_ui, sans-serif;
+        }
+        
+        .heading-font {
+            font-family: 'Space Grotesk', 'Inter', system_ui, sans-serif;
+            font-weight: 600;
+            letter-spacing: -0.025em;
+        }
+
+        .section-header {
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: #1f2937;
+            position: relative;
+            display: inline-block;
+        }
+        
+        .section-header:after {
+            content: '';
+            position: absolute;
+            bottom: -6px;
+            left: 0;
+            width: 40px;
+            height: 3px;
+            background: linear-gradient(to right, #003087, #1e40af);
+            border-radius: 3px;
+        }
+
+        .skill-pill {
+            transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        .skill-pill:hover {
+            transform: translateY(-1px);
+            box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+        }
+
+        .experience-card {
+            transition: all 0.3s cubic-bezier(0.4, 0.0, 0.2, 1);
+        }
+
+        .timeline-dot {
+            box-shadow: 0 0 0 4px #f8fafc;
+        }
+
+        .resume-container {
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        .modern-shadow {
+            box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.05), 0 4px 6px -4px rgb(0 0 0 / 0.05);
+        }
+
+        .azure-accent {
+            color: #0078D4;
+        }
+
+        .print-friendly {
+            @media print {
+                .no-print { display: none !important; }
+                body { background: white; }
+                .section-header:after { background: #003087; }
+            }
+        }
+
+        .nav-active {
+            color: #003087;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 print-friendly">
+    <!-- Top Navigation / Header Bar -->
+    <div class="bg-white border-b border-slate-200 sticky top-0 z-50 no-print">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex items-center gap-x-3">
+                    <div class="w-9 h-9 bg-[#003087] rounded-xl flex items-center justify-center">
+                        <i class="fa-solid fa-server text-white text-xl"></i>
+                    </div>
+                    <div>
+                        <span class="font-semibold text-xl tracking-tight">Douglas Rakocy</span>
+                        <span class="text-xs text-slate-500 block -mt-0.5">Infrastructure &amp; Cloud Specialist</span>
+                    </div>
+                </div>
+                
+                <div class="flex items-center gap-x-4 text-sm">
+                    <a href="#summary" class="px-4 py-2 text-slate-600 hover:text-slate-900 transition-colors">Summary</a>
+                    <a href="#skills" class="px-4 py-2 text-slate-600 hover:text-slate-900 transition-colors">Skills</a>
+                    <a href="#experience" class="px-4 py-2 text-slate-600 hover:text-slate-900 transition-colors">Experience</a>
+                    <a href="#education" class="px-4 py-2 text-slate-600 hover:text-slate-900 transition-colors">Education</a>
+                    
+                    <div class="h-6 w-px bg-slate-200 mx-1"></div>
+                    
+                    <a href="mailto:rakocyd@gmail.com" 
+                       class="inline-flex items-center gap-x-2 px-5 py-2 bg-[#003087] hover:bg-[#002266] text-white text-sm font-medium rounded-2xl transition-all active:scale-[0.985]">
+                        <i class="fa-solid fa-envelope"></i>
+                        <span>Contact</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="resume-container px-6 pt-8 pb-16">
+        
+        <!-- Hero / Header -->
+        <div class="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-8 mb-10">
+            <div>
+                <div class="inline-flex items-center gap-x-2 px-4 py-1.5 bg-emerald-100 text-emerald-700 rounded-3xl text-xs font-semibold tracking-[0.5px] mb-4">
+                    <i class="fa-solid fa-check-circle"></i>
+                    <span>TAILORED FOR INFRASTRUCTURE SPECIALIST 4 (260001FO)</span>
+                </div>
+                
+                <h1 class="text-6xl lg:text-7xl font-semibold tracking-tighter heading-font text-slate-900">Douglas Rakocy</h1>
+                
+                <div class="mt-3 flex flex-wrap items-center gap-x-3 text-xl text-slate-600">
+                    <span class="font-medium">Infrastructure Specialist 4</span>
+                    <span class="text-slate-400">•</span>
+                    <span>IT Infrastructure Manager</span>
+                </div>
+                
+                <div class="mt-4 flex items-center gap-x-6 text-sm">
+                    <div class="flex items-center gap-x-2 text-slate-600">
+                        <i class="fa-solid fa-map-marker-alt text-[#003087]"></i>
+                        <span>Columbus, Ohio</span>
+                    </div>
+                    <div class="flex items-center gap-x-2 text-slate-600">
+                        <i class="fa-solid fa-phone text-[#003087]"></i>
+                        <a href="tel:6145574736" class="hover:text-[#003087] transition-colors">614.557.4736</a>
+                    </div>
+                    <div class="flex items-center gap-x-2 text-slate-600">
+                        <i class="fa-solid fa-envelope text-[#003087]"></i>
+                        <a href="mailto:rakocyd@gmail.com" class="hover:text-[#003087] transition-colors">rakocyd@gmail.com</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="lg:text-right">
+                <div class="inline-flex flex-col items-end">
+                    <div class="px-5 py-2.5 bg-white rounded-3xl shadow-sm border border-slate-200 flex items-center gap-x-3">
+                        <div>
+                            <div class="text-xs text-slate-500">18+ YEARS</div>
+                            <div class="font-semibold text-slate-900">State of Ohio IT</div>
+                        </div>
+                        <div class="h-8 w-px bg-slate-200"></div>
+                        <div class="text-right">
+                            <div class="flex items-center gap-x-1.5 justify-end">
+                                <i class="fa-brands fa-microsoft text-[#0078D4]"></i>
+                                <span class="text-xs font-medium text-[#0078D4]">Azure Ready</span>
+                            </div>
+                            <div class="text-xs text-emerald-600 font-medium">Hybrid Cloud Expert</div>
+                        </div>
+                    </div>
+                    <div class="mt-3 text-xs text-slate-500">Previously held Infrastructure Specialist 4 role • MS Computer Science</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Quick Stats Bar -->
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12">
+            <div class="bg-white rounded-3xl p-5 border border-slate-100 modern-shadow">
+                <div class="flex items-center gap-x-3">
+                    <div class="w-11 h-11 bg-blue-100 rounded-2xl flex items-center justify-center flex-shrink-0">
+                        <i class="fa-solid fa-server text-blue-600 text-2xl"></i>
+                    </div>
+                    <div>
+                        <div class="text-3xl font-semibold text-slate-900">18+</div>
+                        <div class="text-xs uppercase tracking-widest text-slate-500 -mt-0.5">Years Infrastructure</div>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-white rounded-3xl p-5 border border-slate-100 modern-shadow">
+                <div class="flex items-center gap-x-3">
+                    <div class="w-11 h-11 bg-emerald-100 rounded-2xl flex items-center justify-center flex-shrink-0">
+                        <i class="fa-solid fa-sync text-emerald-600 text-2xl"></i>
+                    </div>
+                    <div>
+                        <div class="text-3xl font-semibold text-slate-900">50%</div>
+                        <div class="text-xs uppercase tracking-widest text-slate-500 -mt-0.5">IT Change Leadership</div>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-white rounded-3xl p-5 border border-slate-100 modern-shadow">
+                <div class="flex items-center gap-x-3">
+                    <div class="w-11 h-11 bg-violet-100 rounded-2xl flex items-center justify-center flex-shrink-0">
+                        <i class="fa-solid fa-network-wired text-violet-600 text-2xl"></i>
+                    </div>
+                    <div>
+                        <div class="text-3xl font-semibold text-slate-900">DNS/DHCP</div>
+                        <div class="text-xs uppercase tracking-widest text-slate-500 -mt-0.5">Infoblox DDI Expert</div>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-white rounded-3xl p-5 border border-slate-100 modern-shadow">
+                <div class="flex items-center gap-x-3">
+                    <div class="w-11 h-11 bg-amber-100 rounded-2xl flex items-center justify-center flex-shrink-0">
+                        <i class="fa-solid fa-shield-halved text-amber-600 text-2xl"></i>
+                    </div>
+                    <div>
+                        <div class="text-3xl font-semibold text-slate-900">CCNP</div>
+                        <div class="text-xs uppercase tracking-widest text-slate-500 -mt-0.5">+ 4 Cisco Certifications</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Professional Summary -->
+        <div id="summary" class="mb-14 scroll-mt-20">
+            <div class="flex items-center gap-x-3 mb-4">
+                <i class="fa-solid fa-user-tie text-[#003087] text-2xl"></i>
+                <h2 class="section-header">Professional Summary</h2>
+            </div>
+            
+            <div class="prose prose-slate max-w-none text-[15.2px] leading-relaxed text-slate-600">
+                <p class="mb-4">Results-driven <strong class="text-slate-800">Infrastructure Specialist and IT Manager</strong> with over 18 years of hands-on experience designing, administering, and evolving enterprise IT infrastructure for Ohio state agencies. Proven expertise in <strong class="text-slate-800">Microsoft Windows Server environments</strong>, DNS/DHCP/IPAM management (Infoblox DDI), Group Policy enforcement, system monitoring, change management, and cross-functional collaboration.</p>
+                
+                <p class="mb-4">Demonstrated success leading IT-driven system-level change efforts, managing complex on-premise infrastructures (Windows/Linux VMs, storage, networks), implementing security baselines, and ensuring high availability and compliance with state IT policies. Extensive experience responding to infrastructure incidents, performing root cause analysis, documenting technical resolutions, and partnering with vendors and state enterprise IT teams.</p>
+                
+                <p>Deeply familiar with hybrid environments and well-positioned to manage <strong class="text-[#0078D4]">Microsoft Azure</strong> resources, resource groups, application gateways, Key Vault, App Services, CI/CD pipelines with Azure DevOps, security dashboards, and performance monitoring. Ready to bring state government infrastructure expertise to the Ohio Department of Education and Workforce as Infrastructure Specialist 4.</p>
+            </div>
+        </div>
+
+        <!-- Core Technical Skills -->
+        <div id="skills" class="mb-14 scroll-mt-20">
+            <div class="flex items-center gap-x-3 mb-5">
+                <i class="fa-solid fa-cogs text-[#003087] text-2xl"></i>
+                <h2 class="section-header">Core Competencies &amp; Technical Skills</h2>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
+                
+                <!-- Primary Tech -->
+                <div class="bg-white border border-slate-100 rounded-3xl p-5 modern-shadow">
+                    <div class="uppercase text-xs tracking-[1px] font-semibold text-[#0078D4] mb-3 flex items-center gap-x-2">
+                        <i class="fa-brands fa-microsoft"></i> 
+                        <span>PRIMARY TECHNOLOGY</span>
+                    </div>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="skill-pill inline-block px-3.5 py-1 bg-[#0078D4]/10 text-[#0078D4] text-xs font-medium rounded-2xl">Microsoft Azure (Resource Mgmt, App Services, Security Dashboard, Monitoring, Hybrid Integration)</span>
+                        <span class="skill-pill inline-block px-3.5 py-1 bg-[#0078D4]/10 text-[#0078D4] text-xs font-medium rounded-2xl">Azure DevOps CI/CD Readiness</span>
+                    </div>
+                </div>
+                
+                <div class="bg-white border border-slate-100 rounded-3xl p-5 modern-shadow">
+                    <div class="uppercase text-xs tracking-[1px] font-semibold text-emerald-600 mb-3 flex items-center gap-x-2">
+                        <i class="fa-solid fa-server"></i> 
+                        <span>SECONDARY TECHNOLOGY</span>
+                    </div>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="skill-pill inline-block px-3.5 py-1 bg-emerald-100 text-emerald-700 text-xs font-medium rounded-2xl">Microsoft Windows Server</span>
+                        <span class="skill-pill inline-block px-3.5 py-1 bg-emerald-100 text-emerald-700 text-xs font-medium rounded-2xl">Windows/Linux VM Administration</span>
+                        <span class="skill-pill inline-block px-3.5 py-1 bg-emerald-100 text-emerald-700 text-xs font-medium rounded-2xl">Active Directory &amp; IAM</span>
+                    </div>
+                </div>
+                
+                <div class="bg-white border border-slate-100 rounded-3xl p-5 modern-shadow">
+                    <div class="uppercase text-xs tracking-[1px] font-semibold text-violet-600 mb-3 flex items-center gap-x-2">
+                        <i class="fa-solid fa-network-wired"></i> 
+                        <span>NETWORK SERVICES</span>
+                    </div>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="skill-pill inline-block px-3.5 py-1 bg-violet-100 text-violet-700 text-xs font-medium rounded-2xl">DNS / DHCP / IPAM (Infoblox DDI)</span>
+                        <span class="skill-pill inline-block px-3.5 py-1 bg-violet-100 text-violet-700 text-xs font-medium rounded-2xl">Group Policy Objects (GPO)</span>
+                        <span class="skill-pill inline-block px-3.5 py-1 bg-violet-100 text-violet-700 text-xs font-medium rounded-2xl">VLAN Segmentation &amp; QoS</span>
+                        <span class="skill-pill inline-block px-3.5 py-1 bg-violet-100 text-violet-700 text-xs font-medium rounded-2xl">SSL/TLS Certificate Management</span>
+                    </div>
+                </div>
+                
+                <div class="bg-white border border-slate-100 rounded-3xl p-5 modern-shadow">
+                    <div class="uppercase text-xs tracking-[1px] font-semibold text-amber-600 mb-3 flex items-center gap-x-2">
+                        <i class="fa-solid fa-sync-alt"></i> 
+                        <span>CHANGE &amp; OPERATIONS</span>
+                    </div>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="skill-pill inline-block px-3.5 py-1 bg-amber-100 text-amber-700 text-xs font-medium rounded-2xl">IT-Driven Change Management</span>
+                        <span class="skill-pill inline-block px-3.5 py-1 bg-amber-100 text-amber-700 text-xs font-medium rounded-2xl">Solutions Design &amp; Architecture</span>
+                        <span class="skill-pill inline-block px-3.5 py-1 bg-amber-100 text-amber-700 text-xs font-medium rounded-2xl">Incident Response &amp; Root Cause Analysis</span>
+                        <span class="skill-pill inline-block px-3.5 py-1 bg-amber-100 text-amber-700 text-xs font-medium rounded-2xl">ServiceNow / Ticketing Systems</span>
+                    </div>
+                </div>
+                
+                <div class="bg-white border border-slate-100 rounded-3xl p-5 modern-shadow">
+                    <div class="uppercase text-xs tracking-[1px] font-semibold text-rose-600 mb-3 flex items-center gap-x-2">
+                        <i class="fa-solid fa-shield-halved"></i> 
+                        <span>SECURITY &amp; COMPLIANCE</span>
+                    </div>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="skill-pill inline-block px-3.5 py-1 bg-rose-100 text-rose-700 text-xs font-medium rounded-2xl">Cybersecurity Best Practices</span>
+                        <span class="skill-pill inline-block px-3.5 py-1 bg-rose-100 text-rose-700 text-xs font-medium rounded-2xl">Security Baselines &amp; Hardening</span>
+                        <span class="skill-pill inline-block px-3.5 py-1 bg-rose-100 text-rose-700 text-xs font-medium rounded-2xl">State IT Policy Compliance</span>
+                    </div>
+                </div>
+                
+                <div class="bg-white border border-slate-100 rounded-3xl p-5 modern-shadow">
+                    <div class="uppercase text-xs tracking-[1px] font-semibold text-teal-600 mb-3 flex items-center gap-x-2">
+                        <i class="fa-solid fa-terminal"></i> 
+                        <span>AUTOMATION &amp; TOOLS</span>
+                    </div>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="skill-pill inline-block px-3.5 py-1 bg-teal-100 text-teal-700 text-xs font-medium rounded-2xl">PowerShell Scripting</span>
+                        <span class="skill-pill inline-block px-3.5 py-1 bg-teal-100 text-teal-700 text-xs font-medium rounded-2xl">SolarWinds Orion Monitoring</span>
+                        <span class="skill-pill inline-block px-3.5 py-1 bg-teal-100 text-teal-700 text-xs font-medium rounded-2xl">Wireshark Packet Analysis</span>
+                        <span class="skill-pill inline-block px-3.5 py-1 bg-teal-100 text-teal-700 text-xs font-medium rounded-2xl">Vendor Integration (CUCM, Webex, Polycom)</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Professional Experience -->
+        <div id="experience" class="mb-14 scroll-mt-20">
+            <div class="flex items-center gap-x-3 mb-6">
+                <i class="fa-solid fa-briefcase text-[#003087] text-2xl"></i>
+                <h2 class="section-header">Professional Experience</h2>
+            </div>
+            
+            <!-- Current Role -->
+            <div class="experience-card bg-white border border-slate-200 rounded-3xl p-8 mb-6 modern-shadow">
+                <div class="flex flex-col md:flex-row md:items-start md:justify-between gap-y-4">
+                    <div>
+                        <div class="flex items-center gap-x-3">
+                            <span class="font-semibold text-2xl text-slate-900">IT Manager 1</span>
+                            <span class="px-3 py-0.5 text-xs font-medium bg-emerald-100 text-emerald-700 rounded-2xl">Current</span>
+                        </div>
+                        <div class="text-slate-600 mt-1">State of Ohio — Industrial Commission • Columbus, OH</div>
+                        <div class="text-xs text-slate-500 mt-0.5">May 2022 – Present</div>
+                    </div>
+                    <div class="text-right text-sm">
+                        <div class="inline-flex items-center px-3 py-1 bg-emerald-50 text-emerald-700 rounded-2xl text-xs font-medium">
+                            <i class="fa-solid fa-globe mr-1.5"></i> Hybrid Infrastructure Leadership
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="mt-6 space-y-4 text-[14.5px] text-slate-600 leading-relaxed">
+                    <div class="flex gap-3">
+                        <div class="mt-1.5 flex-shrink-0"><i class="fa-solid fa-check text-emerald-500 fa-fw"></i></div>
+                        <div><strong>Primary agency IT infrastructure contact</strong> — collaborate daily with application developers, architects, DBAs, and state enterprise IT teams to design on-premise and hybrid solutions that meet agency requirements and comply with state IT policies.</div>
+                    </div>
+                    
+                    <div class="flex gap-3">
+                        <div class="mt-1.5 flex-shrink-0"><i class="fa-solid fa-check text-emerald-500 fa-fw"></i></div>
+                        <div><strong>Administer and manage enterprise DNS, DHCP, and IPAM infrastructure</strong> using Infoblox DDI — ensuring reliable name resolution, seamless IP allocation, and hybrid cloud/on-premise connectivity across the agency network.</div>
+                    </div>
+                    
+                    <div class="flex gap-3">
+                        <div class="mt-1.5 flex-shrink-0"><i class="fa-solid fa-check text-emerald-500 fa-fw"></i></div>
+                        <div><strong>Lead IT-driven change management efforts</strong> — plan and execute system upgrades, infrastructure expansions, and process improvements while meeting project deadlines and maintaining operational stability.</div>
+                    </div>
+                    
+                    <div class="flex gap-3">
+                        <div class="mt-1.5 flex-shrink-0"><i class="fa-solid fa-check text-emerald-500 fa-fw"></i></div>
+                        <div><strong>Hands-on Windows Server administration</strong> supporting mission-critical applications (Cisco Unified Communications Manager 7.2–11.5). Configure, monitor, and troubleshoot servers, storage, and network services.</div>
+                    </div>
+                    
+                    <div class="flex gap-3">
+                        <div class="mt-1.5 flex-shrink-0"><i class="fa-solid fa-check text-emerald-500 fa-fw"></i></div>
+                        <div><strong>Proactive monitoring &amp; incident response</strong> using SolarWinds Orion — respond to alerts, perform root cause analysis, prepare technical incident reports, and remediate issues in collaboration with state teams and vendors.</div>
+                    </div>
+                    
+                    <div class="flex gap-3">
+                        <div class="mt-1.5 flex-shrink-0"><i class="fa-solid fa-check text-emerald-500 fa-fw"></i></div>
+                        <div><strong>Enforce security baselines</strong> through VLAN segmentation, QoS policies, and standardized configurations. Manage secure communications infrastructure including certificate-based authentication and integration with third-party platforms (XmediusFAX, Syn-Apps, Webex, Polycom).</div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Previous Role -->
+            <div class="experience-card bg-white border border-slate-200 rounded-3xl p-8 modern-shadow">
+                <div class="flex flex-col md:flex-row md:items-start md:justify-between gap-y-4">
+                    <div>
+                        <div class="flex items-center gap-x-3">
+                            <span class="font-semibold text-2xl text-slate-900">Infrastructure Specialist 4</span>
+                        </div>
+                        <div class="text-slate-600 mt-1">State of Ohio — Industrial Commission • Columbus, OH</div>
+                        <div class="text-xs text-slate-500 mt-0.5">May 2008 – May 2022 (14 years)</div>
+                    </div>
+                    <div class="text-right text-sm">
+                        <div class="inline-flex items-center px-3 py-1 bg-slate-100 text-slate-600 rounded-2xl text-xs font-medium">
+                            <i class="fa-solid fa-history mr-1.5"></i> 14 Years Progressive Growth
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="mt-6 space-y-4 text-[14.5px] text-slate-600 leading-relaxed">
+                    <div class="flex gap-3">
+                        <div class="mt-1.5 flex-shrink-0"><i class="fa-solid fa-check text-emerald-500 fa-fw"></i></div>
+                        <div><strong>Managed full lifecycle of enterprise infrastructure systems</strong> — planned, implemented, and administered Windows-based platforms, CUCM evolution, and third-party integrations while ensuring designs complied with state IT policies and procedures.</div>
+                    </div>
+                    
+                    <div class="flex gap-3">
+                        <div class="mt-1.5 flex-shrink-0"><i class="fa-solid fa-check text-emerald-500 fa-fw"></i></div>
+                        <div><strong>Deep troubleshooting and maintenance of on-premise infrastructure</strong> — resolved complex issues involving network services (DNS relay, DHCP scopes, VLAN trunking), PoE systems, and application performance. Reduced downtime through proactive monitoring and remediation.</div>
+                    </div>
+                    
+                    <div class="flex gap-3">
+                        <div class="mt-1.5 flex-shrink-0"><i class="fa-solid fa-check text-emerald-500 fa-fw"></i></div>
+                        <div><strong>Designed and maintained scalable LAN/WAN environments</strong> with emphasis on structured cabling, fault tolerance, and future-proofing — directly supporting the agency’s hybrid connectivity needs.</div>
+                    </div>
+                    
+                    <div class="flex gap-3">
+                        <div class="mt-1.5 flex-shrink-0"><i class="fa-solid fa-check text-emerald-500 fa-fw"></i></div>
+                        <div><strong>Acted as technical specialist</strong> for CUCM and integrated platforms — served as primary point-of-contact for vendors and internal teams, sharing knowledge through documentation and informal training/mentorship.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Education & Certifications -->
+        <div id="education" class="grid md:grid-cols-5 gap-6 scroll-mt-20">
+            
+            <!-- Education -->
+            <div class="md:col-span-3 bg-white border border-slate-200 rounded-3xl p-8 modern-shadow">
+                <div class="flex items-center gap-x-3 mb-5">
+                    <i class="fa-solid fa-graduation-cap text-[#003087] text-2xl"></i>
+                    <h2 class="section-header">Education</h2>
+                </div>
+                
+                <div class="space-y-6">
+                    <div>
+                        <div class="font-semibold text-lg">Master of Science, Computer Science</div>
+                        <div class="text-slate-600">Franklin University, Columbus, Ohio</div>
+                    </div>
+                    <div>
+                        <div class="font-semibold text-lg">Bachelor of Science, Computer Science</div>
+                        <div class="text-slate-600">Youngstown State University, Youngstown, Ohio</div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Certifications -->
+            <div class="md:col-span-2 bg-white border border-slate-200 rounded-3xl p-8 modern-shadow">
+                <div class="flex items-center gap-x-3 mb-5">
+                    <i class="fa-solid fa-certificate text-[#003087] text-2xl"></i>
+                    <h2 class="section-header">Certifications</h2>
+                </div>
+                
+                <div class="space-y-4 text-sm">
+                    <div class="flex items-start gap-3">
+                        <i class="fa-brands fa-cisco text-orange-500 mt-0.5 fa-lg"></i>
+                        <div>
+                            <div class="font-semibold">Cisco Certified Network Professional (CCNP)</div>
+                            <div class="text-xs text-slate-500">Advanced routing, switching, troubleshooting — strong foundation for Azure Virtual Networks &amp; hybrid connectivity</div>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-3">
+                        <i class="fa-brands fa-cisco text-orange-500 mt-0.5 fa-lg"></i>
+                        <div>
+                            <div class="font-semibold">Cisco Certified Network Associate (CCNA)</div>
+                            <div class="text-xs text-slate-500">Core networking &amp; infrastructure troubleshooting</div>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-3">
+                        <i class="fa-brands fa-cisco text-orange-500 mt-0.5 fa-lg"></i>
+                        <div>
+                            <div class="font-semibold">Cisco Certified Design Professional (CCDP)</div>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-3">
+                        <i class="fa-brands fa-cisco text-orange-500 mt-0.5 fa-lg"></i>
+                        <div>
+                            <div class="font-semibold">Cisco Certified Design Associate (CCDA)</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer / Azure Hosting Note -->
+        <div class="mt-16 pt-8 border-t border-slate-200 text-center">
+            <div class="max-w-md mx-auto">
+                <div class="inline-flex items-center gap-x-2 text-xs uppercase tracking-[1.5px] text-slate-500 font-medium mb-2">
+                    <i class="fa-brands fa-microsoft"></i>
+                    <span>OPTIMIZED FOR AZURE</span>
+                </div>
+                <p class="text-xs text-slate-500">This modern, responsive single-file resume is ready for Azure Static Web Apps, Azure Blob Storage static website, or Azure App Service. Clean typography, mobile-first design, and ATS-friendly structure.</p>
+                
+                <div class="mt-4 flex justify-center gap-x-3 text-xs">
+                    <a href="#" onclick="window.print()" class="inline-flex items-center gap-x-1.5 px-4 py-2 text-slate-600 hover:text-slate-900 transition-colors">
+                        <i class="fa-solid fa-print"></i> <span>Print / PDF</span>
+                    </a>
+                    <span class="text-slate-300">•</span>
+                    <span class="text-slate-500">Last updated: May 2026</span>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+    <script>
+        // Tailwind script for any dynamic classes if needed
+        function initializeTailwind() {
+            // Any future dynamic Tailwind config can go here
+            console.log('%c[Resume] Modern Azure-optimized resume initialized', 'color:#64748b;font-size:9px');
+        }
+        
+        // Keyboard accessibility
+        document.addEventListener('keydown', function(e) {
+            if (e.key === '/' && document.activeElement.tagName === 'BODY') {
+                e.preventDefault();
+                const summary = document.getElementById('summary');
+                if (summary) summary.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
+        });
+        
+        // Smooth scroll for nav links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    e.preventDefault();
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            });
+        });
+        
+        // Initialize
+        window.onload = function() {
+            initializeTailwind();
+            
+            // Optional: Add subtle animation to skill pills on load
+            setTimeout(() => {
+                document.querySelectorAll('.skill-pill').forEach((pill, i) => {
+                    pill.style.transitionDelay = (i * 30) + 'ms';
+                    pill.style.opacity = '1';
+                });
+            }, 300);
+        };
+        
+        // Bonus: Make it easy to copy contact info
+        console.log('%c[Resume] Tip: This HTML file can be directly deployed to Azure Static Web Apps (drag & drop or GitHub integration).', 'color:#64748b;font-size:9px');
+    </script>
+</body>
+</html>
